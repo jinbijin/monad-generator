@@ -9,7 +9,7 @@
     ],
     "scripts": {
         "build": "tsc",
-        "lint": "eslint",
+        "lint": "eslint .",
         "spell": "cspell lint \"**\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
