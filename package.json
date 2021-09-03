@@ -1,0 +1,32 @@
+{
+  "name": "monad-generator",
+  "version": "0.0.0",
+  "description": "Monads via generators",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinbijin/monad-generator.git"
+  },
+  "keywords": [
+    "typescript",
+    "monad",
+    "generator"
+  ],
+  "author": "jinbijin",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jinbijin/monad-generator/issues"
+  },
+  "homepage": "https://github.com/jinbijin/monad-generator#readme",
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  }
+}
