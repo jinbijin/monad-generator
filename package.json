@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,9 @@
   },
   "homepage": "https://github.com/jinbijin/monad-generator#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
     "typescript": "^4.4.2"
   }
 }

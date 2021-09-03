@@ -1,1 +1,3 @@
-export function example(): void { }
+export function example(): number {
+    return 1;
+}
