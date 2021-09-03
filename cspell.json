@@ -1,0 +1,12 @@
+{
+    "version": "0.1",
+    "language": "en",
+    "ignorePaths": [
+        "**/.git/objects/**",
+        "**/dist/**",
+        "**/node_modules/**",
+        "*.json",
+        "**/*.config.ts",
+        "**/.vscode/**"
+    ]
+}
