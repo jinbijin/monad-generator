@@ -1,39 +1,43 @@
 {
-    "name": "monad-generator",
-    "version": "0.0.0",
-    "description": "Monads via generators",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "/dist"
-    ],
-    "scripts": {
-        "build": "tsc",
-        "lint": "eslint .",
-        "spell": "cspell lint \"**\"",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jinbijin/monad-generator.git"
-    },
-    "keywords": [
-        "typescript",
-        "monad",
-        "generator"
-    ],
-    "author": "jinbijin",
-    "license": "GPL-3.0-or-later",
-    "bugs": {
-        "url": "https://github.com/jinbijin/monad-generator/issues"
-    },
-    "homepage": "https://github.com/jinbijin/monad-generator#readme",
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.30.0",
-        "@typescript-eslint/parser": "^4.30.0",
-        "cspell": "^5.9.0",
-        "eslint": "^7.32.0",
-        "prettier": "^2.3.2",
-        "typescript": "^4.4.2"
-    }
+  "name": "monad-generator",
+  "version": "0.0.0",
+  "description": "Monads via generators",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "spell": "cspell lint \"**\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinbijin/monad-generator.git"
+  },
+  "keywords": [
+    "typescript",
+    "monad",
+    "generator"
+  ],
+  "author": "jinbijin",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jinbijin/monad-generator/issues"
+  },
+  "homepage": "https://github.com/jinbijin/monad-generator#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "cspell": "^5.9.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
 }
