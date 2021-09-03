@@ -4,6 +4,7 @@
         "**/dist/**",
         "**/node_modules/**",
         "*.json", // JSON files in root are typically config files
+        "**/*.config.ts",
         "**/.vscode/**"
     ],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
