@@ -1,9 +1,4 @@
-export function* mapReturn<TYield, TReturn, TNext, UReturn>(
-    generator: Generator<TYield, TReturn, TNext>,
-    mapFn: (value: TReturn) => UReturn
-): Generator<TYield, UReturn, TNext> {
-    return mapFn(yield* generator);
-}
+import { mapReturn } from './functions';
 
 export class GeneratorBuilder<TYield = unknown, TReturn = any, TNext = unknown> {
     readonly #value: Generator<TYield, TReturn, TNext>;

@@ -1,34 +1,6 @@
-import { mapReturn } from './generator';
-
-class MaybeJustData<T = any> {
-    readonly value: T;
-
-    constructor(value: T) {
-        this.value = value;
-    }
-}
-
-class MaybeNoneData {}
-
-type MaybeData<T = any> = MaybeJustData<T> | MaybeNoneData;
-
-type MaybeGenerator<T> = Generator<MaybeData, T, any>;
-
-export type Maybe<T> = () => MaybeGenerator<T>;
-
-export class MaybeFactory {
-    static just<T>(value: T): Maybe<T> {
-        return () => MaybeFactory.#justGenerator(value);
-    }
-
-    static *none<T>(): MaybeGenerator<T> {
-        return yield new MaybeNoneData();
-    }
-
-    static *#justGenerator<T>(value: T): Generator<MaybeData<T>, T, T> {
-        return yield new MaybeJustData(value);
-    }
-}
+import { mapReturn } from '../generator/functions';
+import { MaybeData, MaybeNoneData } from './data';
+import { Maybe, MaybeGenerator } from './generator';
 
 export class MaybeBuilder<T> {
     readonly #value: Maybe<T>;
