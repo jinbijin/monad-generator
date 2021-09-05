@@ -9,6 +9,8 @@
     ],
     "scripts": {
         "build": "tsc --build",
+        "format:check": "prettier -c .",
+        "format": "prettier -w .",
         "lint": "eslint .",
         "spell": "cspell lint \"**\"",
         "test": "jest"
